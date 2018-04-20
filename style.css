@@ -1,0 +1,57 @@
+*{
+  margin: 0px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+header{
+  background-color: #f39c12;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+.title{
+  padding-top: 10px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.title img{
+  height: 70px;
+  width: 70px;
+  margin-right: 30px;
+}
+.navbar{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+#searchbar{
+  padding: 20px 100px;
+}
+#buttonsearch{
+  padding: 0px 20px;
+}
+.affiche{
+  padding-top: 10px;
+}
+.filmyear{
+  background-color: #e67e22;
+  height: 500px;
+}
+.filmyear h3{
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.film img{
+  padding-top: 80px;
+  height: 300px;
+  width: 200px;
+}
+.film{
+  display: flex;
+  justify-content: space-around;
+}
+#img1{
+  visibility: hidden;
+}
+#img2{
+  visibility: hidden;
+}

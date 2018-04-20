@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MoviesSearch</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="title">
+      <h1>MovieSearch</h1>
+      <img src="http://www.vicksdesign.com/products/moviemaker-film-movie-camera-action-cut-40-B1.png" alt="logo">
+    </div>
+    <div class="navbar">
+        <input id="searchbar" type="text" name="" value="" placeholder="Find your movie here">
+        <input id="buttonsearch" type="button" value="Search" onclick="secretimg()">
+        <script>
+        function secretimg(){
+          var test = document.getElementById("searchbar").value;
+          var result = ''
+          if (test === "fighter"){
+            result = document.getElementById("img1")
+            result.style.visibility = "visible";
+          }else{
+            if (test === "life") {
+              result = document.getElementById("img2")
+              result.style.visibility = "visible";
+            }else{
+              alert("nothing");
+            }
+          }
+        }
+        </script>
+    </div>
+  </header>
+  <div class="affiche">
+    <div class="filmyear">
+      <h3>Movies find :</h3>
+      <div class="film">
+        <div id="img1">
+        <img src="http://static1.purepeople.com/articles/2/72/63/2/@/547997-l-affiche-du-film-the-fighter-950x0-2.jpg" alt="">
+        </div>
+        <div id="img2">
+        <img src="http://fr.web.img2.acsta.net/r_1280_720/pictures/17/02/15/09/25/520233.jpg" alt="">
+        </div>
+        <div id="img3">
+        <img src="http://images.affiches-et-posters.com//albums/3/2619/affiche-film-gladiator-164.jpg" alt="">
+        </div>
+        <div id="img4">
+        <img src="https://media.senscritique.com/media/000017103245/source_big/Guardians.jpg" alt="">
+        </div>
+        <div id="img5">
+        <img src="http://www.lyricis.fr/wp-content/uploads/2009/11/Avatar-Affiche-France-2.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
